@@ -1,0 +1,16 @@
+[package]
+name = "reliable_transport"
+version = "0.0.1"
+edition = "2021"
+
+# Specify multiple binary targets
+[[bin]]
+name = "sender"
+path = "src/sender.rs"
+
+[[bin]]
+name = "receiver"
+path = "src/receiver.rs"
+
+[dependencies]
+crc = "2.1.0"

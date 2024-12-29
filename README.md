@@ -20,6 +20,11 @@ In this project, you will build a simple reliable transport protocol, WTP, **on 
 
 There are a variety of ways to ensure a message is reliably delivered from a sender to a receiver. You are to implement a sender (`wSender`) and a receiver (`wReceiver`) that follows the following WTP specification.
 
+## Running and testing
+```shell
+./sender "10.0.0.1" 8000 10 "Cargo.toml" "sender.log"
+```
+
 ### WTP Specification
 
 WTP sends data in the format of a header, followed by a chunk of data.

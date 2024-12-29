@@ -14,3 +14,15 @@ path = "src/receiver.rs"
 
 [dependencies]
 crc = "2.1.0"
+rand = "0.8.5"
+
+[profile.release]
+opt-level = 3    # Maximum optimization
+debug = false
+lto = true       # Enable link-time optimization
+codegen-units = 1 # Improves optimization at the cost of compile time
+
+[profile.dev]
+opt-level = 1
+debug = true
+incremental = true

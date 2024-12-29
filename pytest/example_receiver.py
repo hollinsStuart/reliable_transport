@@ -8,7 +8,7 @@ if __name__ == '__main__':
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(('localhost', 8888))  # Use the appropriate IP and port
 
-    while true:
+    while True:
         # Receive the packet
         data, addr = sock.recvfrom(sizeof(Packet))  # Ensure the buffer size matches the struct size
 

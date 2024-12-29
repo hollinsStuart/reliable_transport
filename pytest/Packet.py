@@ -3,7 +3,6 @@ from ctypes import *
 
 DATA_SIZE = 1456
 
-
 class PacketHeader(Structure):
     _fields_ = [
         ("type", c_uint),

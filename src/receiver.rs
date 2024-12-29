@@ -1,3 +1,10 @@
+mod packet;
+mod packet_header;
+mod utils;
+
+use packet::Packet;
+use packet_header::PacketHeader;
+
 use std::net::UdpSocket;
 
 fn main() -> std::io::Result<()> {
